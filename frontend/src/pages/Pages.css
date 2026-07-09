@@ -1,0 +1,100 @@
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.page p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.restaurants-grid,
+.dishes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.restaurant-card,
+.dish-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant-card:hover,
+.dish-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.restaurant-image,
+.dish-image {
+  width: 100%;
+  height: 200px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+
+.restaurant-card h3,
+.dish-card h3 {
+  padding: 1rem 1rem 0.5rem;
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.restaurant-card p,
+.dish-card p {
+  padding: 0 1rem;
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+  flex-grow: 1;
+}
+
+.restaurant-rating {
+  padding: 0.5rem 1rem;
+  margin: 0;
+}
+
+.dish-price {
+  padding: 0.5rem 1rem;
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ff6b6b;
+}
+
+.dish-card button {
+  margin: 1rem;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.dish-card button:hover {
+  background-color: #ff5252;
+}
